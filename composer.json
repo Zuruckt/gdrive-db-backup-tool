@@ -1,0 +1,7 @@
+{
+    "require": {
+        "spatie/db-dumper": "^3.0",
+        "vlucas/phpdotenv": "^5.3",
+        "google/apiclient": "^2.0"
+    }
+}

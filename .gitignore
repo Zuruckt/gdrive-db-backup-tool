@@ -1,3 +1,5 @@
 vendor/
 dumps
 .env
+credentials.json
+token.json

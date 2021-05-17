@@ -19,7 +19,7 @@ class MysqlDumperService
                     ->setUserName($_ENV['DB_USERNAME'])
                     ->setPassword($_ENV['DB_PASSWORD'])
                     ->dumpToFile($filename);
-        return $filename;
+        return str_replace('dumps/', '', $filename);
         } catch (CannotStartDump $exception) {
             die('Error: ' . $exception->getMessage() . PHP_EOL . 'MySQL server connection failed, please check your .env configuration!');
         } catch (DumpFailed $exception) {
